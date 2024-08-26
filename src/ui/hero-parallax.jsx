@@ -35,7 +35,7 @@ export const HeroParallax = ({ products }) => {
 		springConfig,
 	);
 	const translateY = useSpring(
-		useTransform(scrollYProgress, [0, 0.2], [-700, 500]),
+		useTransform(scrollYProgress, [0, 0.2], [-900, 500]),
 		springConfig,
 	);
 	return (
@@ -118,9 +118,7 @@ export const ProductCard = ({ product, translate }) => {
 			>
 				<img
 					src={product.thumbnail}
-					height='600'
-					width='600'
-					className='object-cover object-left-top absolute h-full w-full inset-0'
+					className='object-cover h-[600] w-[600] object-left-top absolute inset-0'
 					alt={product.title}
 				/>
 			</a>
