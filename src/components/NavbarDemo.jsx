@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { HoveredLink, Menu, MenuItem, ProductItem } from '../ui/navbar-menu';
 import { cn } from '../utils/utils';
+import { Link } from 'react-router-dom';
 
 export function NavbarDemo() {
 	return (
@@ -27,7 +28,7 @@ function Navbar({ className }) {
 					</div>
 				</MenuItem>
 				<MenuItem setActive={setActive} active={active} item='Proyectos '>
-					<div className='  text-sm grid grid-cols-2 gap-10 p-4'>
+					<div className='text-sm grid grid-cols-2 gap-10 p-4'>
 						<ProductItem
 							title='Tienda de Ropa'
 							href='https://algochurn.com'
@@ -57,12 +58,15 @@ function Navbar({ className }) {
 				<MenuItem setActive={setActive} active={active} item='Sobre Mí'>
 					<div className='flex flex-col space-y-4 text-sm'>
 						<HoveredLink href='/pasatiempo'>Pasatiempo</HoveredLink>
-						<HoveredLink href='/habilidades-técnicas'>Habilidades Técnicas</HoveredLink>
-						<HoveredLink href='/habilidades-blandas'>Habilidades Blandas</HoveredLink>
+						<HoveredLink href='/habilidades'>Habilidades</HoveredLink>
 						<HoveredLink href='/descargar-cv'>Descargar CV</HoveredLink>
 					</div>
 				</MenuItem>
-				<MenuItem item='Blog' />
+				<MenuItem setActive={setActive} item='Blog'>
+					<Link to='/blog' className='hovered-link-class'>
+						Blog
+					</Link>
+				</MenuItem>
 				<MenuItem setActive={setActive} item='Contacto' />
 			</Menu>
 		</div>

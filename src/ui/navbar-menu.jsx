@@ -11,8 +11,13 @@ const transition = {
 };
 
 export const MenuItem = ({ setActive, active, item, children }) => {
+	const handleMouseEnter = () => {
+		if (typeof setActive === 'function') {
+			setActive(item);
+		}
+	};
 	return (
-		<div onMouseEnter={() => setActive(item)} className='relative '>
+		<div onMouseEnter={handleMouseEnter} className='relative '>
 			<motion.p
 				transition={{ duration: 0.3 }}
 				className='cursor-pointer text-black hover:opacity-[0.9] dark:text-white'
