@@ -1,33 +1,21 @@
-import { ThreeDCardDemo } from './components/ThreeDCardDemo';
-import { BentoGridDemo } from './components/BentoGridDemo';
-import { HeroParallaxDemo } from './components/HeroParallaxDemo';
-import { AuroraBackgroundDemo } from './components/AuroraBackgroundDemo';
-import { NavbarDemo } from './components/NavbarDemo';
-import { TextGenerateEffectDemo } from './components/TextGenerateEffectDemo';
+import { HomePage } from './pages/HomePage';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { ProyectosPage } from './pages/ProyectosPage';
+import { SobreMiPage } from './pages/SobreMiPage';
+import { BlogPage } from './pages/BlogPage';
 
 function App() {
 	return (
 		<>
 			<div className='bg-black'>
-				<div>
-					<NavbarDemo />
-				</div>
-				<div>
-					<AuroraBackgroundDemo />
-				</div>
-				<div className='flex justify-center'>
-					<ThreeDCardDemo />
-					<ThreeDCardDemo />
-				</div>
-				<div className='p-5'>
-					<BentoGridDemo />
-				</div>
-				<div>
-					<HeroParallaxDemo />
-				</div>
-				<div className='h-[500px] w-full p-10 flex justify-center items-center text-center'>
-					<TextGenerateEffectDemo />
-				</div>
+				<Router>
+					<Routes>
+						<Route path='/' element={<HomePage />} />
+						<Route path='/proyectos' element={<ProyectosPage />} />
+						<Route path='/sobre-mi' element={<SobreMiPage />} />
+						<Route path='/blog' element={<BlogPage />} />
+					</Routes>
+				</Router>
 			</div>
 		</>
 	);
