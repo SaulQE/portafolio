@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { HoveredLink, Menu, MenuItem, ProductItem } from '../ui/navbar-menu';
 import { cn } from '../utils/utils';
 import { Link } from 'react-router-dom';
+import logo from '../img/logo.png';
 
 export function NavbarDemo() {
 	return (
@@ -22,6 +23,15 @@ function Navbar({ className }) {
 			)}
 		>
 			<Menu setActive={setActive}>
+				<Link to='/'>
+					<img src={logo} alt='Logo' className='h-6 pr-10 w-auto' />
+				</Link>
+				<MenuItem
+					setActive={setActive}
+					active={active}
+					item='Inicio'
+					linkTo={'/'}
+				/>
 				<MenuItem setActive={setActive} active={active} item='Servicios'>
 					<div className='flex flex-col space-y-4 text-sm'>
 						<HoveredLink href='/web-dev'>Desarrollo web</HoveredLink>
