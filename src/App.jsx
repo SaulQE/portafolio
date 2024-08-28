@@ -4,12 +4,14 @@ import { ProyectosPage } from './pages/ProyectosPage';
 import { SobreMiPage } from './pages/SobreMiPage';
 import { BlogPage } from './pages/BlogPage';
 import { ContactoPage } from './pages/ContactoPage';
+import { NavbarDemo } from './components/NavbarDemo';
 
 function App() {
 	return (
 		<>
 			<div className='bg-black'>
 				<Router>
+					<NavbarDemo />
 					<Routes>
 						<Route path='/' element={<HomePage />} />
 						<Route path='/proyectos' element={<ProyectosPage />} />
