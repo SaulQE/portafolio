@@ -1,5 +1,4 @@
 import { BentoGrid, BentoGridItem } from '../ui/bento-grid';
-import { SiSpringboot } from 'react-icons/si';
 import img from '../img/dev.jpg';
 import {
 	IconArrowWaveRightUp,
