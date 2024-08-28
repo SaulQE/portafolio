@@ -1,12 +1,12 @@
-import { TextGenerateEffectDemo } from "./TextGenerateEffectDemo";
+/* eslint-disable react/prop-types */
 
-export function GridBackgroundDemo() {
+export function GridBackgroundDemo({ children }) {
 	return (
-		<div className='h-[50rem] w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center'>
+		<div className='min-h-screen h-full w-full dark:bg-black bg-white dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center'>
 			{/* Radial gradient for the container to give a faded look */}
 			<div className='absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]'></div>
-			<div className='h-[500px] w-full p-10 flex justify-center items-center text-center'>
-				<TextGenerateEffectDemo />
+			<div className='h-full w-full p-10 flex justify-center items-center text-center'>
+				{children}
 			</div>
 		</div>
 	);

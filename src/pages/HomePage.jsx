@@ -1,13 +1,14 @@
 import { GridBackgroundDemo } from '../components/GridBackgroundDemo';
 import { AuroraBackgroundDemo } from '../components/AuroraBackgroundDemo';
+import { BentoGridDemo } from '../components/BentoGridDemo';
 
 export const HomePage = () => {
 	return (
 		<>
-			<div>
-				<AuroraBackgroundDemo />
-				<GridBackgroundDemo />
-			</div>
+			<AuroraBackgroundDemo />
+			<GridBackgroundDemo>
+				<BentoGridDemo />
+			</GridBackgroundDemo>
 		</>
 	);
 };
