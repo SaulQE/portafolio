@@ -76,13 +76,6 @@ function Navbar({ className }) {
 						</Link>
 					</div>
 				</MenuItem>
-				<MenuItem setActive={setActive} active={active} item='Sobre Mí'>
-					<div className='flex flex-col space-y-4 text-sm'>
-						<HoveredLink href='/pasatiempo'>Pasatiempo</HoveredLink>
-						<HoveredLink href='/habilidades'>Habilidades</HoveredLink>
-						<HoveredLink href='/descargar-cv'>Descargar CV</HoveredLink>
-					</div>
-				</MenuItem>
 				<MenuItem setActive={setActive} item='Blog' linkTo='/blog' />
 				<MenuItem setActive={setActive} item='Contacto' linkTo={'/contacto'} />
 			</Menu>
