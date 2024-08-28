@@ -16,7 +16,10 @@ function Navbar({ className }) {
 	const [active, setActive] = useState(null);
 	return (
 		<div
-			className={cn('fixed top-10 inset-x-0 max-w-2xl mx-auto z-50', className)}
+			className={cn(
+				'fixed top-10 inset-x-0 w-full max-w-full md:max-w-2xl mx-auto z-50',
+				className,
+			)}
 		>
 			<Menu setActive={setActive}>
 				<MenuItem setActive={setActive} active={active} item='Servicios'>
@@ -42,17 +45,25 @@ function Navbar({ className }) {
 							description='Production ready Tailwind css components for your next project'
 						/>
 						<ProductItem
-							title='Moonbeam'
-							href='https://gomoonbeam.com'
+							title='En proceso...'
+							href='#'
 							src='https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png'
 							description='Never write from scratch again. Go from idea to blog in minutes.'
 						/>
 						<ProductItem
-							title='Rogue'
-							href='https://userogue.com'
+							title='En proceso...'
+							href='#'
 							src='https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png'
 							description='Respond to government RFPs, RFIs and RFQs 10x faster using AI'
 						/>
+					</div>
+					<div className='h-[50px] w-full bg-white flex justify-center items-center rounded-xl border border-transparent text-neutral-700 text-base'>
+						<Link
+							to='/proyectos'
+							className='flex w-full h-full justify-center items-center'
+						>
+							Ver todos los proyectos
+						</Link>
 					</div>
 				</MenuItem>
 				<MenuItem setActive={setActive} active={active} item='Sobre Mí'>
@@ -62,12 +73,8 @@ function Navbar({ className }) {
 						<HoveredLink href='/descargar-cv'>Descargar CV</HoveredLink>
 					</div>
 				</MenuItem>
-				<MenuItem setActive={setActive} item='Blog'>
-					<Link to='/blog' className='hovered-link-class'>
-						Blog
-					</Link>
-				</MenuItem>
-				<MenuItem setActive={setActive} item='Contacto' />
+				<MenuItem setActive={setActive} item='Blog' linkTo='/blog' />
+				<MenuItem setActive={setActive} item='Contacto' linkTo={'/contacto'} />
 			</Menu>
 		</div>
 	);
