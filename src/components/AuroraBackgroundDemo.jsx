@@ -19,10 +19,10 @@ export function AuroraBackgroundDemo() {
 					Portafolio en desarrollo...
 				</div>
 				<div className='text-3xl md:text-6xl font-bold dark:text-white text-center'>
-					{/* Saúl Andres Quispesucso Esquivel */} Lorem ipsum dolor sit amet.
+					Saúl Andres Quispesucso Esquivel {/* Lorem ipsum dolor sit amet. */}
 				</div>
 				<p className='text-lg md:text-3xl mb-6 text-gray-400'>
-					{/* DESARROLLADOR DE SOFTWARE */} Lorem ipsum dolor 
+					DESARROLLADOR DE SOFTWARE {/* Lorem ipsum dolor  */}
 				</p>
 				<Link
 					to={'/proyectos'}

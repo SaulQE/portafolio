@@ -1,3 +1,4 @@
+import { IconClipboardCopy } from '@tabler/icons-react';
 import { cn } from '../utils/utils';
 
 export function CardDemo() {
@@ -11,17 +12,19 @@ export function CardDemo() {
 					'before:bg-[url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWlodTF3MjJ3NnJiY3Rlc2J0ZmE0c28yeWoxc3gxY2VtZzA5ejF1NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/syEfLvksYQnmM/giphy.gif)] before:fixed before:inset-0 before:opacity-0 before:z-[-1]',
 					'hover:bg-[url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWlodTF3MjJ3NnJiY3Rlc2J0ZmE0c28yeWoxc3gxY2VtZzA5ejF1NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/syEfLvksYQnmM/giphy.gif)]',
 					"hover:after:content-[''] hover:after:absolute hover:after:inset-0 hover:after:bg-black hover:after:opacity-50",
-					'transition-all duration-500',
+					'transition-all duration-500 hover:shadow-xl group/bento row-span-1 rounded-xl group/bento shadow-input dark:shadow-none p-4 dark:bg-black dark:border-white/[0.2] bg-white border border-transparent flex flex-col space-y-4',
 				)}
 			>
 				<div className='text relative z-50'>
-					<h1 className='font-bold text-xl md:text-3xl text-gray-50 relative'>
-						Background Overlays
-					</h1>
-					<p className='font-normal text-base text-gray-50 relative my-4'>
-						This card is for some special elements, like displaying background
-						gifs on hover only.
-					</p>
+					<div className='group-hover/bento:translate-x-2 transition duration-200'>
+						<IconClipboardCopy className='h-4 w-4 text-neutral-500' />
+						<div className='font-sans font-bold text-neutral-600 dark:text-neutral-200 mb-2 mt-2'>
+							The Dawn of Innovation
+						</div>
+						<div className='font-sans font-normal text-neutral-600 text-xs dark:text-neutral-300'>
+							Explore the birth of groundbreaking ideas and inventions
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
