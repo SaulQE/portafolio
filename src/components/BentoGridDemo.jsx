@@ -4,6 +4,7 @@ import {
 	IconClipboardCopy,
 	IconFileBroken,
 	IconSignature,
+	IconBrandGit,
 } from '@tabler/icons-react';
 
 // Importa todas las imágenes y GIFs del directorio 'img'
