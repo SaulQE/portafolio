@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { cn } from '../utils/utils';
 import {
 	IconAdjustmentsBolt,
@@ -13,48 +14,43 @@ import {
 export function FeaturesSectionDemo() {
 	const features = [
 		{
-			title: 'Built for developers',
-			description:
-				'Built for engineers, developers, dreamers, thinkers and doers.',
+			title: 'Lorem ipsum dolor1',
+			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
 			icon: <IconTerminal2 />,
 		},
 		{
-			title: 'Ease of use',
-			description:
-				"It's as easy as using an Apple, and as expensive as buying one.",
+			title: 'Lorem ipsum dolor2',
+			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
 			icon: <IconEaseInOut />,
 		},
 		{
-			title: 'Pricing like no other',
-			description:
-				'Our prices are best in the market. No cap, no lock, no credit card required.',
+			title: 'Lorem ipsum dolor3',
+			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
 			icon: <IconCurrencyDollar />,
 		},
 		{
-			title: '100% Uptime guarantee',
-			description: 'We just cannot be taken down by anyone.',
+			title: 'Lorem ipsum dolor4',
+			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
 			icon: <IconCloud />,
 		},
 		{
-			title: 'Multi-tenant Architecture',
-			description: 'You can simply share passwords instead of buying new seats',
+			title: 'Lorem ipsum dolor5',
+			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
 			icon: <IconRouteAltLeft />,
 		},
 		{
-			title: '24/7 Customer Support',
-			description:
-				'We are available a 100% of the time. Atleast our AI Agents are.',
+			title: 'Lorem ipsum dolor6',
+			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
 			icon: <IconHelp />,
 		},
 		{
-			title: 'Money back guarantee',
-			description:
-				'If you donot like EveryAI, we will convince you to like us.',
+			title: 'Lorem ipsum dolor7',
+			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
 			icon: <IconAdjustmentsBolt />,
 		},
 		{
-			title: 'And everything else',
-			description: 'I just ran out of copy ideas. Accept my sincere apologies',
+			title: 'Lorem ipsum dolor8',
+			description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
 			icon: <IconHeart />,
 		},
 	];
