@@ -4,6 +4,8 @@ import { HoveredLink, Menu, MenuItem, ProductItem } from '../ui/navbar-menu';
 import { cn } from '../utils/utils';
 import { Link } from 'react-router-dom';
 import logo from '../img/logo.png';
+import enproceso from '../img/en-proceso.jpg';
+import prontosalud from '../img/ProntoSalud.png';
 
 export function NavbarDemo() {
 	return (
@@ -44,26 +46,26 @@ function Navbar({ className }) {
 					<div className='text-sm grid grid-cols-2 gap-10 p-4'>
 						<ProductItem
 							title='Tienda de Ropa'
-							href='https://algochurn.com'
-							src='https://assets.aceternity.com/demos/algochurn.webp'
+							href='https://prontosalud.com.pe'
+							src={enproceso}
 							description='Prepare for tech interviews like never before.'
 						/>
 						<ProductItem
 							title='Pronto Salud'
 							href='https://prontosalud.com.pe'
-							src='https://assets.aceternity.com/demos/tailwindmasterkit.webp'
+							src={prontosalud}
 							description='Production ready Tailwind css components for your next project'
 						/>
 						<ProductItem
 							title='En proceso...'
-							href='#'
-							src='https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png'
+							href='https://prontosalud.com.pe'
+							src={enproceso}
 							description='Never write from scratch again. Go from idea to blog in minutes.'
 						/>
 						<ProductItem
 							title='En proceso...'
-							href='#'
-							src='https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png'
+							href='https://prontosalud.com.pe'
+							src={enproceso}
 							description='Respond to government RFPs, RFIs and RFQs 10x faster using AI'
 						/>
 					</div>
@@ -77,7 +79,7 @@ function Navbar({ className }) {
 					</div>
 				</MenuItem>
 				<MenuItem setActive={setActive} item='Blog' linkTo='/blog' />
-				<MenuItem setActive={setActive} item='Contacto' linkTo={'/contacto'} />
+				<MenuItem setActive={setActive} item='Contacto' linkTo='/#' />
 			</Menu>
 		</div>
 	);

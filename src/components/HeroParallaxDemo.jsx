@@ -1,4 +1,5 @@
 import { HeroParallax } from '../ui/hero-parallax';
+import img from '../img/en-proceso.jpg';
 
 export function HeroParallaxDemo() {
 	return <HeroParallax products={products} />;
@@ -7,94 +8,79 @@ export const products = [
 	{
 		title: 'Moonbeam',
 		link: '#',
-		thumbnail:
-			'https://aceternity.com/images/products/thumbnails/new/moonbeam.png',
+		thumbnail: img,
 	},
 	{
 		title: 'Cursor',
 		link: '#',
-		thumbnail:
-			'https://aceternity.com/images/products/thumbnails/new/cursor.png',
+		thumbnail: img,
 	},
 	{
 		title: 'Rogue',
 		link: '#',
-		thumbnail:
-			'https://aceternity.com/images/products/thumbnails/new/rogue.png',
+		thumbnail: img,
 	},
 
 	{
 		title: 'Editorially',
 		link: '#',
-		thumbnail:
-			'https://aceternity.com/images/products/thumbnails/new/editorially.png',
+		thumbnail: img,
 	},
 	{
 		title: 'Editrix AI',
 		link: '#',
-		thumbnail:
-			'https://aceternity.com/images/products/thumbnails/new/editrix.png',
+		thumbnail: img,
 	},
 	{
 		title: 'Pixel Perfect',
 		link: '#',
-		thumbnail:
-			'https://aceternity.com/images/products/thumbnails/new/pixelperfect.png',
+		thumbnail: img,
 	},
 
 	{
 		title: 'Algochurn',
 		link: '#',
-		thumbnail:
-			'https://aceternity.com/images/products/thumbnails/new/algochurn.png',
+		thumbnail: img,
 	},
 	{
 		title: 'Aceternity UI',
 		link: '#',
-		thumbnail:
-			'https://aceternity.com/images/products/thumbnails/new/aceternityui.png',
+		thumbnail: img,
 	},
 	{
 		title: 'Tailwind Master Kit',
 		link: '#',
-		thumbnail:
-			'https://aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png',
+		thumbnail: img,
 	},
 	{
 		title: 'SmartBridge',
 		link: '#',
-		thumbnail:
-			'https://aceternity.com/images/products/thumbnails/new/smartbridge.png',
+		thumbnail: img,
 	},
 	{
 		title: 'Renderwork Studio',
 		link: '#',
-		thumbnail:
-			'https://aceternity.com/images/products/thumbnails/new/renderwork.png',
+		thumbnail: img,
 	},
 
 	{
 		title: 'Creme Digital',
 		link: '#',
-		thumbnail:
-			'https://aceternity.com/images/products/thumbnails/new/cremedigital.png',
+		thumbnail: img,
 	},
 	{
 		title: 'Golden Bells Academy',
 		link: '#',
-		thumbnail:
-			'https://aceternity.com/images/products/thumbnails/new/goldenbellsacademy.png',
+		thumbnail: img,
 	},
 	{
 		title: 'Invoker Labs',
 		link: '#',
-		thumbnail:
-			'https://aceternity.com/images/products/thumbnails/new/invoker.png',
+		thumbnail: img,
 	},
 	{
 		title: 'E Free Invoice',
 		link: '#',
-		thumbnail:
-			'https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png',
+		thumbnail: img,
 	},
 ];
